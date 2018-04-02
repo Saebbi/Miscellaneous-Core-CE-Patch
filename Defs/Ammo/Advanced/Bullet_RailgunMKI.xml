@@ -66,8 +66,42 @@
     <label>railgun bullet</label>
     <projectile>
       <damageAmountBase>35</damageAmountBase>
-      <armorPenetration>5.0</armorPenetration>
+      <armorPenetration>3.0</armorPenetration>
     </projectile>
   </ThingDef>
+	
+  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+    <defName>MakeAmmo_RailgunMKI</defName>
+    <label>make RailgunMKI cartridge x10</label>
+    <description>Craft 10 RailgunMKI cartridges.</description>
+    <jobString>Making RailgunMKI cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Component</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Component</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_RailgunMKI>100</Ammo_RailgunMKI>
+    </products>
+  </RecipeDef>
 	
 </Defs>
