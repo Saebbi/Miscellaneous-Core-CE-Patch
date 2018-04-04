@@ -66,42 +66,42 @@
     <label>railgun bullet</label>
     <projectile>
       <damageAmountBase>35</damageAmountBase>
-      <armorPenetration>3.0</armorPenetration>
+      <armorPenetration>5.0</armorPenetration>
     </projectile>
   </ThingDef>
 	
-  <RecipeDef ParentName="ChargeAmmoRecipeBase">
-    <defName>MakeAmmo_RailgunMKI</defName>
-    <label>make RailgunMKI cartridge x10</label>
-    <description>Craft 10 RailgunMKI cartridges.</description>
-    <jobString>Making RailgunMKI cartridges.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Plasteel</li>
-          </thingDefs>
-        </filter>
-        <count>3</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Component</li>
-          </thingDefs>
-        </filter>
-        <count>3</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Plasteel</li>
-        <li>Component</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <Ammo_RailgunMKI>100</Ammo_RailgunMKI>
-    </products>
+  <RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_RailgunMKI</defName>
+		<label>make RailgunMKI ammo x20</label>
+		<description>Craft 20 RailgunMKI ammo.</description>
+		<jobString>Making RailgunMKI ammo.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_RailgunMKI>20</Ammo_RailgunMKI>
+		</products>
+    <workAmount>2250</workAmount>
   </RecipeDef>
 	
 </Defs>
